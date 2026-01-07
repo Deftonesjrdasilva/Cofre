@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cofre</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+    background:radial-gradient(circle at top,#1a1a1a,#000);
+    font-family: Georgia, 'Times New Roman', serif;
+    height:100vh;margin:0;
+    display:flex;justify-content:center;align-items:center;
+    color:#e0e0e0;
+}
+body.aberto{background:radial-gradient(circle at top,#3b1d2a,#12080d)}
+.cofre{
+    width:90%;
+    max-width:420px;
+    padding:26px;
+    border-radius:20px;
+    background:linear-gradient(145deg,#4b4b4b,#1f1f1f);
+    border:6px solid #2c2c2c;
+    text-align:center;
+    box-shadow:inset 0 0 40px rgba(0,0,0,.9),0 20px 40px rgba(0,0,0,.9);
+}
+.cofre.aberto{
+    background:linear-gradient(145deg,#5a2a3c,#2a0f19);
+    border-color:#8b3a5a;
+}
+h1{letter-spacing:3px;font-size:22px}
+.dial{
+    width:120px;height:120px;
+    margin:18px auto;
+    border-radius:50%;
+    background:radial-gradient(circle,#555,#111);
+    border:6px solid #222;
+    display:flex;align-items:center;justify-content:center;
+    font-size:26px;color:#aaa;
+    transition:.6s;
+}
+.cofre.aberto .dial{font-size:56px}
+form{margin:0}
+input{
+    width:100%;padding:14px;font-size:18px;
+    border:none;border-radius:6px;
+    background:#111;color:#0f0;text-align:center;
+}
+button{
+    width:100%;padding:14px;margin-top:10px;
+    border:none;border-radius:6px;
+    background:#666;color:white;font-size:16px;
+}
+.mensagem{
+    display:none;
+    margin-top:18px;
+    text-align:left;
+    line-height:1.8;
+    font-size:15px;
+    color:#ffe6ee;
+    max-height:50vh;
+    overflow-y:auto;
+    padding-right:6px;
+}
+.mensagem h3{text-align:center;color:#ffd1dc}
+.mensagem p{margin-bottom:14px}
+blockquote{
+    border-left:3px solid #ff8fb1;
+    padding-left:12px;
+    font-style:italic;
+    margin:18px 0;
+}
+.erro{color:#ff6b6b;margin-top:10px}
+</style>
+</head>
+<body>
 
+<div class="cofre" id="cofre">
+<h1 id="titulo">COFRE</h1>
+<div class="dial" id="dial">● ● ●</div>
+
+<form onsubmit="abrir(event)">
+<input id="senha" inputmode="numeric" placeholder="Digite 175">
+<button type="submit">DESTRAVAR</button>
+</form>
+
+<div class="erro" id="erro"></div>
+
+<div class="mensagem" id="msg">
+
+<p>Olá,Esse texto é uma tentativa sincera de colocar em palavras tudo o que venho sentindo e construindo com cuidado ao longo do tempo.</p>
+
+<p>Olá anjo, falarei um pouco de mim antes, como vc sabe, eu me chamo Davi Miguel Jankovski Piloni, mas conhecido por vc, como Miguel, sou uma pessoa simples e complexa ao mesmo tempo, sou intenso, sensível e às vezes tenho dificuldade em organizar o que sinto, mas estou sempre tentando ser melhor, isso tudo vc ja deve imaginar, estou dizendo pois gostaria que vc entendesse mais sobre mim, muita das vezes posso ser mais profundo do que apenas um “eu te amo” pois demonstro isso de outra forma, temos mais de 400mil palavras no vocabulário português e infelizmente sou incapaz de pensar em alguma que demonstre o que eu sinto por vc.</p>
+
+<p>Vc sabia que o namoro moderno, vem do latim(inamorare) que basicamente significa “inspirar amor”, quando te pedi em namoro todas as vezes foi apenas para me inspirar me mais, para saber que cada parte do meu corpo te ama. O namoro em si foi criado para fugir do casamento arranjando da época antiga e eu meio que quero fugir disso tudo, quero criar algo apenas nosso, algo que seja exclusivamente nosso, escolho você,porque eu te escolho todos os dias em meu pensamentos e todos os dias eu penso em vc.</p>
+
+<p>Cada vez que te pedi em namoro, não foi por insistência, mas porque eu queria estar à altura do que sinto por você, sei que deve ter sido chato ou difícil ter que ficar respondendo “quer namorar comigo” mas cada pedido foi feito exclusivamente com um pensamento, ser melhor.</p>
+
+<p>Não escrevo para te convencer, mas para te deixar ver quem eu sou quando penso em vc,meu carinho por vc cresce nos detalhes e n nas declarações que faço há vc, n faço promessas que sei q n irei cumprir mas cuido com o que sinto, vc sabe que sou intenso com que sinto mas sei me manter calmo quando necessário para n prejudicar seu mental, acho romântico a ideia de caminhar ao seu lado porem sem puxar sua mão,isso significa que n quero ser um incomodo para vc e sim alguém que divida o caminho e torne o fardo mais leve.</p>
+
+<h3>Agora, falando de você.</h3>
+
+<p>Hana Carolina Souza Machuca Deftones da Silva Uchiha mas também Suke, Sasuke, Haninha, Garuzinha, Garu ou pros mais íntimos, Amor.</p>
+
+<p>Você tem um jeito silencioso de amar que é raro. E lindo. O silêncio também é romântico, porque nele existe observação, cuidado e atenção. Às vezes, amar não é dizer nada é saber ouvir, perceber os detalhes que quase ninguém nota digo isso pois vc é uma dessas pessoas, que observa e ama silenciosamente e eu acho isso lindo.</p>
+
+<p>Hoje, chega a dar exatamente 60dias desde que nos conhecemos e pra mim, isso é extremamente importante, por isso essa surpresa, para celebrarmos algo pequeno porem grandioso, queria dizer o motivo da senha ser 175 mas primeiro quero que vc saiba, que cada parte desse texto foi pensado com muita calma e detalhe para que vc se sinta o mais confortável possível.</p>
+
+<p>O 175 representa a distancia dos nossos aniversários 28 de maio - 19 de novembro, isso quer dizer apenas o tempo mas o que é o tempo? O tempo para muitos pode ser doloroso e árduo porém com vc, o tempo se torna romântico e muito agradável de estar, se torna divertido estar ao seu lado e poder caminhar como vc, se torna um aprendizado, pois toda minha vida eu apenas desejei a morte e como vc, eu vejo que seria o meu maior arrependimento eu ter morrido e desistido de tudo, isso me mostra o quanto a vida pode ser algo bom porém o tempo para vc, pode significar outra coisa…</p>
+
+<p>Eu amo vc hana, amo com tudo o que tenho e quero que vc se sinta amada e que confie em mim, não por obrigação mas sim por sua escolha, sua vontade.</p>
+
+<p>Agora irei contar uma fabula, uma fabula que é especial para mim, provavelmente vc conhece mas quero que vc pense sobre ela, pense com cuidado e veja o que isso parece para vc.</p>
+
+<blockquote>
+— Cordeiro, conte uma história<br>
+— Houve outrora, um homem pálido com cabelos negros que estava muito sozinho.<br>
+— Por que estava sozinho?<br>
+— Tudo que existe, precisava encontrar esse homem, então, afastaram-se dele.<br>
+— Ele perseguiu tudo?<br>
+— Ele dividiu-se em dois com um machado.<br>
+— Para que ele sempre tivesse um amigo?<br>
+— Para que ele sempre… tivesse um amigo.
+</blockquote>
+
+<p>Essa fala se refere aos Kindreds do lol.</p>
+
+<p>Com isso, eu finalizo, foram 3 dias, 72hrs lapidando esse texto, para o nosso 60dias se tornasse algo especial, algo fora do rotulo.</p>
+
+</div>
+</div>
+
+<script>
+function abrir(e){
+    e.preventDefault();
+    const s=document.getElementById("senha").value.trim();
+    if(s==="175"){
+        document.getElementById("msg").style.display="block";
+        document.getElementById("senha").style.display="none";
+        document.querySelector("button").style.display="none";
+        document.getElementById("dial").innerText="❤";
+        document.getElementById("titulo").innerText="ABERTO PARA VOCÊ";
+        document.getElementById("cofre").classList.add("aberto");
+        document.body.classList.add("aberto");
+    }else{
+        document.getElementById("erro").innerText="Senha incorreta";
+    }
+}
+</script>
+
+</body>
+</html>
